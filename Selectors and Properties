@@ -1,0 +1,83 @@
+'''html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage with CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <h1> Selectors and Properties</h1>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="section">
+            <div class="section heading">
+                <h2>SECTION</h2>
+            </div>
+            <p>In this section we added a paragraph to show a description for the website. </p>
+            <a href="https://example.com" target="_blank">Link</a>
+        </section>
+    </main>
+</body>
+
+</html>
+
+'''
+
+
+'''css
+
+p {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.section{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+ section {
+    background-color: #bcbbbb;
+    padding: 10px;
+}
+
+
+a[target="_blank"] {
+    color: blue;
+    text-decoration: none;
+    margin-left: 300px
+}
+
+
+p::first-line {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+'''
