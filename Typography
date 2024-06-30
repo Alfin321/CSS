@@ -1,0 +1,163 @@
+'''html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Styles Demonstration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Typography Styles Demonstration</h1>
+    </header>
+
+    <main>
+        <section id="font-families">
+            <h2>Font Families</h2>
+            <p class="serif">This text is in a serif font.</p>
+            <p class="sans-serif">This text is in a sans-serif font.</p>
+            <p class="monospace">This text is in a monospace font.</p>
+        </section>
+
+        <section id="font-sizes">
+            <h2>Font Sizes</h2>
+            <p class="small-font">This text is small.</p>
+            <p class="medium-font">This text is medium.</p>
+            <p class="large-font">This text is large.</p>
+        </section>
+
+        <section id="font-weights">
+            <h2>Font Weights</h2>
+            <p class="light-font">This text is light.</p>
+            <p class="normal-font">This text is normal.</p>
+            <p class="bold-font">This text is bold.</p>
+        </section>
+
+        <section id="font-styles">
+            <h2>Font Styles</h2>
+            <p class="italic-font">This text is italic.</p>
+            <p class="oblique-font">This text is oblique.</p>
+        </section>
+
+        <section id="line-height">
+            <h2>Line Height</h2>
+            <p class="normal-line-height">This text has normal line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lorem vel dui tincidunt condimentum.</p>
+            <p class="increased-line-height">This text has increased line height. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac lorem vel dui tincidunt condimentum.</p>
+        </section>
+
+        <section id="text-transform">
+            <h2>Text Transform</h2>
+            <p class="uppercase-text">this text is uppercase.</p>
+            <p class="lowercase-text">THIS TEXT IS LOWERCASE.</p>
+            <p class="capitalize-text">this text is capitalized.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Typography Styles By Alfin</p>
+    </footer>
+</body>
+</html>
+
+
+'''
+
+'''css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.small-font {
+    font-size: 12px;
+}
+
+.medium-font {
+    font-size: 18px;
+}
+
+.large-font {
+    font-size: 24px;
+}
+
+
+.light-font {
+    font-weight: 300;
+}
+
+.normal-font {
+    font-weight: 400;
+}
+
+.bold-font {
+    font-weight: 700;
+}
+
+
+.italic-font {
+    font-style: italic;
+}
+
+.oblique-font {
+    font-style: oblique;
+}
+
+
+.normal-line-height {
+    line-height: 1.2;
+}
+
+.increased-line-height {
+    line-height: 2;
+}
+
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.lowercase-text {
+    text-transform: lowercase;
+}
+
+.capitalize-text {
+    text-transform: capitalize;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+'''
