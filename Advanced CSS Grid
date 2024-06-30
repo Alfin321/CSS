@@ -1,0 +1,133 @@
+'''html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Grid</h1>
+    </header>
+
+    <main class="grid-container">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content">
+            <div class="nested-grid">
+                <div class="nested-item nested-header">Nested Header</div>
+                <div class="nested-item nested-content">Nested Content</div>
+                <div class="nested-item nested-footer">Nested Footer</div>
+            </div>
+        </div>
+        <div class="grid-item footer">Footer</div>
+        <div class="grid-item extra">Extra Content</div>
+    </main>
+
+   
+</body>
+</html>
+
+
+
+'''
+
+
+'''css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "sidebar content extra"
+        "footer footer footer";
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #05458a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nested-header"
+        "nested-content"
+        "nested-footer";
+    grid-gap: 10px;
+    background-color: #020503;
+    padding: 10px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.extra {
+    grid-area: extra;
+}
+
+.nested-grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "nested-header"
+        "nested-content"
+        "nested-footer";
+    grid-gap: 10px;
+}
+
+.nested-item {
+    background-color: #f40808;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nested-header {
+    grid-area: nested-header;
+}
+
+.nested-content {
+    grid-area: nested-content;
+}
+
+.nested-footer {
+    grid-area: nested-footer;
+}
+
+
+'''
