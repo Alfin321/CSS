@@ -1,0 +1,134 @@
+'''html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Properties in CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Color and Backgrounds</h1>
+    </header>
+
+    <main>
+        <section id="text-color">
+            <h2>Text Color</h2>
+            <p>This is a paragraph with default text color.</p>
+            <p class="colored-text">This is a paragraph with colored text.</p>
+        </section>
+
+        <section id="background-color">
+            <h2>Background Color</h2>
+            <div class="solid-bg"> solid background color.</div>
+        </section>
+
+        <section id="gradients">
+            <h2>Gradients</h2>
+            <div class="linear-gradient"> linear gradient background.</div>
+            <div class="radial-gradient"> radial gradient background.</div>
+        </section>
+
+        <section id="background-properties">
+            <h2>Background </h2>
+            <div class="bg-image"></div>
+            <div class="bg-repeat"></div>
+            <div class="bg-position"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSS Color Properties Demo</p>
+    </footer>
+</body>
+</html>
+
+
+'''
+
+'''css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.colored-text {
+    color: #e91e63; 
+}
+
+
+.solid-bg {
+    background-color: #2196f3; 
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.linear-gradient {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #8e24aa, #d81b60); 
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+
+.bg-image {
+    background-image: url('https://miro.medium.com/v2/resize:fit:600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg');
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.bg-repeat {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq15kdLZEWHPSQuhn3y4YqfX8cIBbcsA8FXw&s');
+    background-repeat: repeat;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.bg-position {
+    background-image: url('https://miro.medium.com/v2/resize:fit:600/1*OFsc0SD55jhi8cjo7aCA4w.jpeg');
+    background-position: bottom right;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+'''
